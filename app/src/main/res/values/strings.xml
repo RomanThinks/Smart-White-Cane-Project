@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cane2.0</string>
+    <string name="navigation">Navigation</string>
+    <string name="settings">Settings</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="activitySet">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="voice_calibration">Voice Calibration</string>
+
+
+</resources>
