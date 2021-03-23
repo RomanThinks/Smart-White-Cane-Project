@@ -1,5 +1,6 @@
 package com.example.cane20
 
+import android.app.Activity
 import android.bluetooth.BluetoothAdapter
 import android.content.Intent
 import android.net.Uri
@@ -15,15 +16,15 @@ class BluetoothActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.bluetooth_activity)
 
-        val button = findViewById<Button>(R.id.homebuttonBtActv) //Home button
-        button.setOnClickListener{
+        val homebuttonBTactv = findViewById<Button>(R.id.homebuttonBtActv) //Home button
+        homebuttonBTactv.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        val button1 = findViewById<Button>(R.id.backbuttonBtActv) //back button
-        button1.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+        val backbuttonBTactv = findViewById<Button>(R.id.backbuttonBtActv) //back button
+        backbuttonBTactv.setOnClickListener{
+            val intent = Intent(this, ActivitySet::class.java)
             startActivity(intent)
         }
 

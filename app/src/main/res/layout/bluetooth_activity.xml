@@ -42,7 +42,7 @@
         android:layout_width="168dp"
         android:layout_height="50dp"
         android:backgroundTint="#31D4CA"
-        android:text="back"
+        android:text="Back"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
