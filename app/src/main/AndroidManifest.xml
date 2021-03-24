@@ -42,6 +42,22 @@
             android:label="Sensor Settings"/>
 
         <activity
+            android:name=".VoiceActivity"
+            android:label="Voice Calibration Settings"/>
+
+        <activity
+            android:name=".VoiceCommandActivity"
+            android:label="Voice Command Settings"/>
+
+        <activity
+            android:name=".MoreActivity"
+            android:label="More Settings"/>
+
+        <activity
+            android:name=".AppPermissionActivity"
+            android:label="Application Permissions"/>
+
+        <activity
             android:name=".MainActivity"
             android:label="Cane20">
             <intent-filter>

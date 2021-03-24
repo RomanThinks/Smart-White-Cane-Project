@@ -44,5 +44,29 @@ class ActivitySet : AppCompatActivity() {
             val intent = Intent(this, SensorActivity::class.java)
             startActivity(intent)
         }
+
+        val button3 = findViewById<Button>(R.id.button6)
+        button3.setOnClickListener{
+            val intent = Intent(this, VoiceActivity::class.java)
+            startActivity(intent)
+        }
+
+        val button4 = findViewById<Button>(R.id.button7)
+        button4.setOnClickListener{
+            val intent = Intent(this, VoiceCommandActivity::class.java)
+            startActivity(intent)
+        }
+
+        val button5 = findViewById<Button>(R.id.button8)
+        button5.setOnClickListener{
+            val intent = Intent(this, MoreActivity::class.java)
+            startActivity(intent)
+        }
+
+        val button6 = findViewById<Button>(R.id.button9)
+        button6.setOnClickListener{
+            val intent = Intent(this, AppPermissionActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
