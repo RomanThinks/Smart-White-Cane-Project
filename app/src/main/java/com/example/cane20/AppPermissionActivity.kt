@@ -16,7 +16,7 @@ class AppPermissionActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val button1 = findViewById<Button>(R.id.backbuttonAppAppPermActv) //back button
+        val button1 = findViewById<Button>(R.id.backbuttonAppPermActv) //back button
         button1.setOnClickListener{
             val intent = Intent(this, ActivitySet::class.java)
             startActivity(intent)
