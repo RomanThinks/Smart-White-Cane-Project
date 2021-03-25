@@ -23,6 +23,9 @@ class SensorActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //establish if bluetooth device connected, then send details
+        //establish if bluetooth device connected first (Just the Cane)
+        //Retrieves parameters from the user and computes them to a value
+        //the value is a threshold for the super sonic sensor that will be
+        //modified in the Pi of the Smart White Cane.
     }
 }

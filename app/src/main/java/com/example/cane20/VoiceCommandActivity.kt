@@ -22,5 +22,14 @@ class VoiceCommandActivity : AppCompatActivity() {
             val intent = Intent(this, ActivitySet::class.java)
             startActivity(intent)
         }
+
+        //first establish a bluetooth connection with the smart white cane
+        //when on, cane activates microphone and listens
+        //Cane will send a value when it recognizes a command
+        /* commands
+         - time
+         - date
+         - ect...
+         */
     }
 }

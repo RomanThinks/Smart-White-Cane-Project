@@ -21,5 +21,10 @@ class MoreActivity : AppCompatActivity() {
             val intent = Intent(this, ActivitySet::class.java)
             startActivity(intent)
         }
+
+        //change font
+        //change size of font
+        //change color of theme
+        //change background
     }
 }
