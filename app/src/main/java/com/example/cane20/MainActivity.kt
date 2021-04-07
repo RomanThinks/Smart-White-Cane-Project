@@ -22,9 +22,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)*/
         }
 
-        val button = findViewById<Button>(R.id.button2) //Home button
-        button.setOnClickListener{
+        val button2 = findViewById<Button>(R.id.button2) //Home button
+        button2.setOnClickListener{
             val intent = Intent(this, ActivitySet::class.java)  //when button 'settings' pressed, sent to Activity set Page
+            startActivity(intent)
+        }
+
+        val button1 = findViewById<Button>(R.id.button1)
+        button1.setOnClickListener{
+            val intent = Intent(this, InternalMapActivity::class.java) //Internal Map activity
             startActivity(intent)
         }
 

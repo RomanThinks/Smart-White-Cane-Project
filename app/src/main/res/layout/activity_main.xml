@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
@@ -32,6 +31,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#34DAD4"
+        android:text="InternalMapApp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
 
     <Button
         android:id="@+id/button2"

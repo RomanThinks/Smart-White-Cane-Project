@@ -16,6 +16,7 @@ buildscript {
 
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.5.0-M1'
+    id 'com.google.secrets_gradle_plugin' version '0.5' //for maps
 }
 allprojects {
     repositories {
@@ -38,6 +39,7 @@ repositories {
 }
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
 }
 compileKotlin {
     kotlinOptions {
