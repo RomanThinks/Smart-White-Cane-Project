@@ -12,6 +12,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.internal_map.*
 
 class InternalMapActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +38,10 @@ class InternalMapActivity : AppCompatActivity() {
             intent.setPackage("com.google.android.apps.maps") //opens maps the other app
             startActivity(intent)
         }*/ //Another now unused method
+
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+            .findFragmentById(R.id.map)
+        map_fragment.getMapAsync(this)
 
         lateinit var mMap: GoogleMap
 
