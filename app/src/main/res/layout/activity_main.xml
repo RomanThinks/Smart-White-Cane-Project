@@ -32,7 +32,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6" />
 
+    <TextView
+        android:layout_width="241dp"
+        android:layout_height="219dp"
+        android:background="#0703DAC5"
+        android:fontFamily="cursive"
+        android:padding="10sp"
+        android:text="SMART WHITE CANE \nMOBILE APPLICATION"
+        android:textColor="#FFE500"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="50dp" />
+
     <Button
+        android:visibility="gone"
         android:id="@+id/button1"
         android:layout_width="275dp"
         android:layout_height="50dp"

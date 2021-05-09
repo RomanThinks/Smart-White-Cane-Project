@@ -22,9 +22,7 @@ class MoreActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //change font
-        //change size of font
-        //change color of theme
-        //change background
+        //now the 'about' page
+
     }
 }

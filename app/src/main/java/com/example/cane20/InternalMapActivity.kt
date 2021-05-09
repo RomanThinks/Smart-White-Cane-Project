@@ -42,7 +42,7 @@ import com.google.android.libraries.places.api.net.PlacesClient
 import kotlinx.android.synthetic.main.activity_maps.*
 import java.security.Permission
 
-class InternalMapActivity : AppCompatActivity(), OnMapReadyCallback {
+abstract class InternalMapActivity : AppCompatActivity(), OnMapReadyCallback {
 
     var LocationPermission = false;
     var PERMISSION_REQUEST_ACCESS_FINE_LOCATION = 1
@@ -88,7 +88,7 @@ class InternalMapActivity : AppCompatActivity(), OnMapReadyCallback {
                     }
                 }
             }
-            updateLocationUI //another class
+            //updateLocationUI //another class
         }
 
         fun updateLocationUI() {
@@ -117,12 +117,12 @@ class InternalMapActivity : AppCompatActivity(), OnMapReadyCallback {
                     Result.addOnCompleteListener(this) {
                         task ->
                         if(task.isSuccessful) {
-                            recentPlace = task.result
+                            //recentPlace = task.result
                             if(recentPlace != null) {
-                                mMap?.moveCamera(
+                                /*mMap?.moveCamera(
                                     CameraUpdateFactory.newLatLngZoom(
                                         LatLng(recentPlace!!.latitude, recentPlace!!.longitude),
-                                        DEFAULT_ZOOM.toFloat()))
+                                        DEFAULT_ZOOM.toFloat()))*/
                             }
                         }
                         else {

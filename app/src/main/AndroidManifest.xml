@@ -55,7 +55,7 @@
 
         <activity
             android:name=".MoreActivity"
-            android:label="More Settings"/>
+            android:label="About the App"/>
 
         <activity
             android:name=".AppPermissionActivity"

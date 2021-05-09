@@ -59,7 +59,7 @@ class ActivitySet : AppCompatActivity() {
 
         val button5 = findViewById<Button>(R.id.button8)
         button5.setOnClickListener{
-            val intent = Intent(this, MoreActivity::class.java)
+            val intent = Intent(this, MoreActivity::class.java) //is now 'about', kept name 'more'
             startActivity(intent)
         }
 

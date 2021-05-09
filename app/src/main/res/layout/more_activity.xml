@@ -16,17 +16,18 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/base" />
 
     <Button
+        android:visibility="gone"
         android:id="@+id/homebuttonMoActv"
         android:layout_width="90dp"
         android:layout_height="38dp"
-        android:backgroundTint="#4A8886"
+        android:backgroundTint="@color/teal_700"
         android:text="HOME"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,28 +42,35 @@
         android:id="@+id/backbuttonMoActv"
         android:layout_width="101dp"
         android:layout_height="39dp"
-        android:backgroundTint="#31D4CA"
+        android:backgroundTint="@color/teal_700"
         android:text="Back"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.903" />
 
-    <Button
-        android:id="@+id/aboutButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#34DAD4"
-        android:text="About"
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="480dp"
+        android:background="@color/teal_700"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <TextView
+        android:layout_width="351sp"
+        android:layout_height="435sp"
+        android:background="@color/teal_200"
+        android:padding="10sp"
+        android:text="    Smart White Cane Project\n\nDeveloped by Team Saber:\n
+        Roman Rodriguez,\n
+        Arturo Verdugo,\n
+        Joshua DeLosSantos\n\nIntended as a Final Project for CSE 5408.\nInstructed in California State University by Dr. Fadi Muheidat\n\nTo be presented on 5/10/2021"
+        android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        tools:layout_editor_absoluteX="30sp"
+        tools:layout_editor_absoluteY="236sp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
